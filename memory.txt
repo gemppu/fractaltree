@@ -1,0 +1,45 @@
++-----------------------------------+
+|           96KB RAM LAYOUT         |
++-------+-------------------+-------+
+| ADDR  | INFO              | BYTES |
++-------+-------------------+-------+
+| 00000 | <VRAM>            | 16384 |
+| 04000 | TILES             | 8192  |
+| 06000 | SPRITES           | 8192  |
+| 08000 | MAP               | 32640 |
+| 0FF80 | GAMEPADS          | 4     |
+| 0FF84 | MOUSE             | 4     |
+| 0FF88 | KEYBOARD          | 4     |
+| 0FF8C | SFX STATE         | 16    |
+| 0FF9C | SOUND REGISTERS   | 72    |
+| 0FFE4 | WAVEFORMS         | 256   |
+| 100E4 | SFX               | 4224  |
+| 11164 | MUSIC PATTERNS    | 11520 |
+| 13E64 | MUSIC TRACKS      | 408   |
+| 13FFC | MUSIC STATE       | 4     |
+| 14000 | STEREO VOLUME     | 4     |
+| 14004 | PERSISTENT MEMORY | 1024  |
+| 14404 | SPRITE FLAGS      | 512   |
+| 14604 | FONT              | 1016  |
+| 149FC | FONT PARAMS       | 8     |
+| 14A04 | ALT FONT          | 1016  |
+| 14DFC | ALT FONT PARAMS   | 8     |
+| 14E04 | BUTTONS MAPPING   | 32    |
+| 14E24 | ... (free)        | 12764 |
++-------+-------------------+-------+
+
+
++-----------------------------------+
+|          16KB VRAM LAYOUT         |
++-------+-------------------+-------+
+| ADDR  | INFO              | BYTES |
++-------+-------------------+-------+
+| 00000 | SCREEN            | 16320 |
+| 03FC0 | PALETTE           | 48    |
+| 03FF0 | PALETTE MAP       | 8     |
+| 03FF8 | BORDER COLOR      | 1     |
+| 03FF9 | SCREEN OFFSET     | 2     |
+| 03FFB | MOUSE CURSOR      | 1     |
+| 03FFC | BLIT SEGMENT      | 1     |
+| 03FFD | ... (reserved)    | 3     |
++-------+-------------------+-------+
